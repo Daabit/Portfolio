@@ -4,57 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Lucero Developer Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/Curso HTML/Portfolio_David_Lucero/styles/styles.css">
 </head>
 <body>
 
     <header>
         <nav>
             <p id="pnav">
-                <a href="index.html">Main</a> |
-                <a href="docs/CV_David_Lucero_(EN).pdf" target="_blank">CV</a> |
-                <a href="about_me.html">More about me</a>
+                <a href="/Curso HTML/Portfolio_David_Lucero/index.html">Main</a> |
+                <a href="/Curso HTML/Portfolio_David_Lucero/docs/CV_David_Lucero_(EN).pdf" target="_blank">CV</a> |
+                <a href="/Curso HTML/Portfolio_David_Lucero/about_me.html">More about me</a>
             </p>
         </nav>       
     </header>
 
     <main>
-        <section id="profile" class = "section-even">   
-            <h1>David Lucero</h1>   
-            <p>Geologist by profession, developer by passion. Programming began as a study aid, now it underpins my personal projects.</p>
+        <section id="profile" class="section section-even">
+        <div class="profile-flex">
             <div class="container-profile-photo">
-                <img src="images/perfil.jpg" alt="Profile photo" id = "profile-photo">
-                <div class="overlay-profile-photo">
-                    <div class="text-overlay-profile-photo"><a href = "about_me.html">More about me</a></div>
-                </div>        
-            </div>  
+            <img src="images/perfil.jpg" alt="Profile photo" id="profile-photo">
+            <div class="overlay-profile-photo">
+                <div class="text-overlay-profile-photo">
+                <a href="about_me.html">More about me</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="profile-text">
+            <h1>David Lucero</h1>
+            <p>Geologist by profession, developer by passion. Programming began as a study aid, now it underpins my personal projects.</p>
+            </div>
+        </div>
         </section>
 
-        <section id = "contact" class = "section-odd">
+        <section id = "contact" class = "section section-odd">
+            <div class = "section-title">
             <h2>Contact</h2>
+            </div>
             <a href="https://www.linkedin.com/in/daabluac/" target="_blank">
-                <img src="images/linkedin.png" width="40" class = "icons"></a>
+                <img src="/Curso HTML/Portfolio_David_Lucero/images/linkedin.png" width="40" class = "icons"></a>
             <a href="https://www.github.com/Daabit" target="_blank">
-                <img src="images/github.png" width="40" class = "icons">
+                <img src="/Curso HTML/Portfolio_David_Lucero/images/github.png" width="40" class = "icons">
             </a>
             <a href="mailto:daabluac@gmail.com">
-                <img src="images/email.png" width="40" class = "icons">
+                <img src="/Curso HTML/Portfolio_David_Lucero/images/email.png" width="40" class = "icons">
             </a>
         </section>
 
-        <section id = "experience" class = "section-even">
+        <section id = "experience" class = "section section-even">
+            <div class = "section-title">
             <h2>Experience</h2>
+            </div>
             <p>Experience developing personal projects focused on geological software.</p>
         </section>
 
-        <section id = "projects" class = "section-odd">
+        <section id = "projects" class = "section section-odd">
+            <div class = "section-title">
             <h2>Projects</h2>
+            </div>
             <ul>
                 <li><strong>Igneous Rock Classifier and Formal Description</strong><p>Simple desktop tool for igneous rock classification, using hand sample or thin section.</p>
                 <div class = "container-ircfd">
-                    <img src="images/MainInterface.PNG" title="Igneous Rock Classifier and Formal Description software" alt="Image showing the software IRC&FD" id="ircfd">
+                    <img src="/Curso HTML/Portfolio_David/images/MainInterface.PNG" title="Igneous Rock Classifier and Formal Description software" alt="Image showing the software IRC&FD" id="ircfd">
                     <div class="overlay-ircfd">
-                        <div class="text-overlay-ircfd">This is a geological software programmed in Python. The product is rock classification and a formal description. <a href="ircandfd.html"><strong>See more</strong></a></div>
+                        <div class="text-overlay-ircfd">This is a geological software programmed in Python. The product is rock classification and a formal description. <a href="/Curso HTML/Portfolio_David_Lucero/ircandfd.html"><strong>See more</strong></a></div>
                     </div>
                 </div>
                 </li>
@@ -64,13 +77,15 @@
             </ul>
         </section>
 
-        <section id = "stack" class = "section-even">
+        <section id = "stack" class = "section section-even">
+            <div class = "section-title">
             <h2>Technologies</h2>
-            <img src="images/Python.png" title="Python" alt="Python icon" class="icons">
-            <img src="images/HTML.png" title="HTML5" alt="HTML5 icon" class="icons">
-            <img src="images/CSS.png" title="CSS" alt="CSS icon" class="icons">
-            <img src="images/VS_Code.png" title="Visual Studio Code" alt="VS Code icon" class="icons">
-            <img src="images/github.png" title="GitHub" alt="GitHub" class="icons">
+            </div>
+            <img src="/Curso HTML/Portfolio_David_Lucero/images/Python.png" title="Python" alt="Python icon" class="icons">
+            <img src="/Curso HTML/Portfolio_David_Lucero/images/HTML.png" title="HTML5" alt="HTML5 icon" class="icons">
+            <img src="/Curso HTML/Portfolio_David_Lucero/images/CSS.png" title="CSS" alt="CSS icon" class="icons">
+            <img src="/Curso HTML/Portfolio_David_Lucero/images/VS_Code.png" title="Visual Studio Code" alt="VS Code icon" class="icons">
+            <img src="/Curso HTML/Portfolio_David_Lucero/images/github.png" title="GitHub" alt="GitHub" class="icons">
         </section>
     </main>
 </body>
