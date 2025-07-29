@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgb(113, 187, 178), rgb(39, 68, 93));
+    background-image: linear-gradient(rgb(39, 68, 93), rgb(113, 187, 178));
     background-color: rgb(39, 68, 93);
     /*border: 1px solid;*/
     display: flow-root; /** mantiene cualquier elemento flotante dentro del cuerpo**/
@@ -11,79 +11,66 @@ header{
     border: 1px solid;
     margin: 10px auto;
     width: 20%;
-    position: relative;
-    /**margin: 10px 300px 10px 750px;
-    padding: 10px 10px 10px 10px;**/
+    position: fixed;
+    top: 25;
+    right: 0;
+    margin: 25px 20px 0px 0px;
+    /**padding: 10px 10px 10px 10px;**/
 }
 
 #pnav{
   text-align: center;
 }
 
-header{
-  background-image: linear-gradient(rgb(39, 68, 93), rgb(73, 125, 116));
+.section-title h2{ /** Agregar h2 para que el borde se ajuste al título **/
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid;
+  background-color: rgb(193, 216, 236);
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  margin: 0;
+  padding: 3px 3px 3px 3px;
+}
+
+.section{
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid;
+  margin: 25px 300px 25px 300px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
 }
 
 .section-even{
-    background-image: linear-gradient(rgb(73, 125, 116), rgb(39, 68, 93));
     background-color: rgb(73, 125, 116);
-    border-radius: 10px 10px 10px 10px;
-    border: 1px solid;
-    margin: 10px 300px 10px 300px;
-    text-align: center;
-    padding: 5px 5px 5px 5px;
 }
 
 .section-odd{
-    background-image: linear-gradient(rgb(39, 68, 93), rgb(73, 125, 116));
     background-color: rgb(113, 187, 178);
-    border-radius: 10px 10px 10px 10px;
-    border: 1px solid;
-    margin: 10px 300px 10px 300px;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
 }
 
-.project1-img{
+.more_about_img, .project1-img{
   border: 1px solid;
   padding: 5px 5px 5px 5px;
 }
 
-.more_about_img{
-  border: 1px solid;
-  padding: 5px 5px 5px 5px;
-}
-
-.project1-img,
-.more_about_img:hover{
+.project1-img:hover, .more_about_img:hover{
   box-shadow: 0 0 10px 5px rgb(113, 187, 178);
 }
 
-/** T E X T**/
-a:link {
+/** T E X T  F O N T S**/
+a:link, a:visited{
   color: rgb(0, 0, 0);
   opacity: 1;
 }
 
-a:visited {
-  color: rgb(0, 0, 0);
-  opacity: 1;
-}
-
-h1{
-    font-family: Verdana, Arial;
-}
-
-h2{
-    font-family: Verdana, Arial;
-}
-
-h3{
-    font-family: Verdana, Arial;
+h1, h2, h3{
+  font-family: 'Courier New', Verdana, Arial;
+  font-weight: bold;
 }
 
 p{
-    font-family: Helvetica, Arial;
+    font-family: 'Lucida Console'
 }
 
 ul {
@@ -92,9 +79,10 @@ ul {
 }
 
 li{
-    font-family: Helvetica, Arial;
+    font-family: 'Lucida Console'
 }
 
+/** I C O N S **/
 .icons{
   height: 25px;
   width: 25px;
@@ -106,6 +94,30 @@ li{
 }
 
 /** E F F E C T S   P R O F I L E   P H O T O**/
+.profile-flex {
+  display: flex;
+  align-items: center;       /* centra verticalmente imagen y texto */
+  gap: 20px;                 /* espacio entre imagen y texto */
+  flex-wrap: wrap;           /* permite que se acomode en columnas en pantallas pequeñas */
+}
+
+.profile-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .profile-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-profile-photo {
+    margin: 0 auto;
+  }
+}
+
+
 #profile-photo {
   display: block;
   width: 250px;
@@ -139,7 +151,7 @@ li{
 .text-overlay-profile-photo {
   color: black;
   font-size: 24px;
-  font-family: Verdana;
+  font-family: 'Lucida Console';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -180,7 +192,7 @@ li{
 .text-overlay-ircfd {
   color: black;
   font-size: 14px;
-  font-family: Verdana;
+  font-family: 'Lucida Console';
   position: absolute;
   text-align: left;
   top: 50%;
