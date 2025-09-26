@@ -246,3 +246,45 @@ li{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/** E F F E C T S   K V S T **/
+#kvst {
+  display: block;
+  width: 21.875rem;
+  height: auto;
+  border: 1px solid;
+}
+
+.container-kvst_game{
+  position: relative;
+  display: inline-block;
+  margin-right: 0.625rem;
+}
+
+.overlay-kvst{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .25s ease;
+  background-image: linear-gradient(rgb(193, 216, 236), rgb(73, 125, 116));
+}
+
+.container-kvst_game:hover .overlay-kvst {
+  opacity: 1;
+  height: 40%;
+}
+
+.text-overlay-kvst {
+  color: black;
+  font-size: 0.875rem;
+  font-family: 'Lucida Console';
+  position: absolute;
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
