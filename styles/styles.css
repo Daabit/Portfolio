@@ -42,7 +42,7 @@ header{
 .section{
   border-radius: 0.625rem;
   border: 1px solid;
-  margin: 1.5625rem 34.375rem;
+  margin: 1.5625rem 25rem;
   text-align: center;
   padding: 0.3125rem;
 }
@@ -288,3 +288,4 @@ li{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
